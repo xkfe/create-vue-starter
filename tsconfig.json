@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+
+    "lib": ["esnext", "dom"],
+    "baseUrl": ".",
+    "rootDir": ".",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {},
+    "resolveJsonModule": true,
+    "types": [],
+    "strict": true,
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  }
+}

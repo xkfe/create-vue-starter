@@ -1,0 +1,55 @@
+{
+  "name": "create-vue-starter",
+  "type": "module",
+  "private": true,
+  "description": "基于 vue 最新生态集成后台、官网、小程序、H5等类型项目快速开发模板的 cli 工具，提高效率，避免重复搭建！",
+  "author": "xkfe <zkai0516@qq.com> (https://github.com/xkfe)",
+  "license": "MIT",
+  "homepage": "https://github.com/xkfe/create-vue-starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xkfe/create-vue-starter"
+  },
+  "keywords": [
+    "create-starter",
+    "create-vue-starter",
+    "template-h5",
+    "template-admin",
+    "template-uniapp"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "npx simple-git-hooks",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "commit": "git-cz",
+    "cz": "git-cz"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.8.3",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.9.0",
+    "eslint": "^8.57.0",
+    "lint-staged": "^15.2.2",
+    "only-allow": "^1.2.1",
+    "simple-git-hooks": "^2.11.0",
+    "typescript": "^5.4.2"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "node scripts/verify-commit.js"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}
