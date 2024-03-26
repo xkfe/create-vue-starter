@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "usernamehw.errorlens",
+    "aaron-bond.better-comments",
+    "wmaurer.change-case",
+    "antfu.unocss"
+  ]
+}
