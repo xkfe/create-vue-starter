@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "usernamehw.errorlens",
+    "aaron-bond.better-comments",
+    "wmaurer.change-case",
+    "streetsidesoftware.code-spell-checker",
+    "alefragnani.project-manager",
+    "antfu.unocss",
+    "uni-helper.uni-app-snippets-vscode",
+    "uni-helper.uni-highlight-vscode"
+  ]
+}
